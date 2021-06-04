@@ -6,35 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Molde-header-menu-footer</title>
     <link href="../styles/header-menu-footer.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
     <body>
         <!-- Begin Header -->
         <header>    
             <div id="header-container-principal">
                 <div id="menu-hamburger">
-                        <img  src="../images/icons/menu.png">
+                 <img  src="../images/icons/menu.png">
                 </div>
+
                 <div id="logo">
                     <img src="../images/logo.png" >
                     <span>INSTRUMENTOS</span>
                 </div>
+
                 <div id="cart">  
                     <div id="elipse-cart">
-                        <img src="../images/icons/cart.png">
+                        <img class="cart-icon" src="../images/icons/cart.png">
                         <div class="elipse">
                             <span>0</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
 
-            <div id="header-container-search">
+
+            <nav id="nav-side">
+                <div id="area-menu">
+                    
+                    <div id="logo-menu">
+                        <img src="../images/logo.png" alt="">
+                        <span>INSTRUMENTOS</span>
+                    </div>
+               
+
+                    <div id="user">  
+                        <div id="img-user">
+                            <img src="../images/icons/usuario.png" class="user-img">
+                        </div>
+
+                        <div id="user-area-info">
+                            <h2>Olá,faça seu login</h2>
+                            <span><a href="#" id="acess-acount-user"> Acessar a área do usuario</a></span>
+                        </div>
+                    </div>
+                    
+                    <ul>
+
+                        <li class="link-menu" >
+                            <div id="open_drop">
+                                Categorias <span class="material-icons">arrow_drop_down</span>
+                            </div>
+                          <ul id="drop-list">  
+                            <li class="drop-item">
+                               <a href="#" class="link-menu">Cordas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Sopro</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Teclas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Acessórios</a>
+                            </li>
+                        </ul>
+                        </li>
+                        
+                        <li><a href="#" class="link-menu move" >Meus Perfil</a></li>
+                        <li><a href="#" class="link-menu move" >Meus Pedidos</a></li>     
+                        <li><a href="#" class="link-menu">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <span class="close"><img src="../images/icons/close.png"></span>
+            </nav>
+
+
+            <div id="header-container-search">  
                 <form id="search-menu">
                     <input type="text" placeholder="O que você procura hoje?">
                     <button type="submit"><img src="../images/icons/search_icon.png"></button>
                 </form>
             </div>
         </header>  
+
+        
         <!-- End Header -->
 
         <!-- Begin your code here -->
@@ -44,32 +103,6 @@
 
         <!-- End your code here -->
         
-        <!-- Begin footer Menu -->
-            <footer>
-                <nav id="menu-footer">
-                    <ul>
-                        <li id="home">
-                            <img src="../images/icons/home.png">
-                            <span>Inicio</span>
-                        </li>
-
-                        <li id="category">
-                            <img src="../images/icons/hamburguer.png">
-                            <span>Categorias</span>
-                        </li>
-
-                        <li id="saved">
-                            <img src="../images/icons/bookmark_full 1.png">
-                            <span>Salvos</span>
-                        </li>
-
-                        <li id="account">
-                            <img src="../images/icons/usuario.png">
-                            <span>Conta</span>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
-        <!-- Eng footer Menu -->
+    <script src="../js/menu-header.js"></script>
     </body>
 </html>
