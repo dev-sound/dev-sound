@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/criar-conta.css">
+    <link rel="stylesheet" href="../styles/create-account.css">
     <title>Crie a sua conta</title>
 </head>
 <body>
@@ -23,30 +23,41 @@
             <h1>Crie a sua conta</h1>
             <div class="fields">
                 <label for="name">Nome</label>
-                <input required type="text" placeholder="Insira seu nome">
-            </div>
-            <div class="fields">
-                <label for="last-name">Sobrenome</label>
-                <input required type="text" placeholder="Insira seu sobrenome">
+                <input required type="text" id="name" placeholder="Insira seu nome">
+                <span style="display: none;" class="namemsg fail">Nome invalido</span>
             </div>
             <div class="fields">
                 <label for="email">E-mail</label>
-                <input required type="text" placeholder="Insira seu e-mail">
+                <input required type="text" id="mail" placeholder="Insira seu e-mail">
+                <span style="display: none;" class="mailMsg fail">Email invalido</span>
+            </div>
+            <div class="fields">
+                <label for="celphone">Telefone</label>
+                <input required type="number" class="celphone" placeholder="(00) XXXXX-XXXX">
+                <span style="display: none;" class="celphoneMsg fail">Telefone Invalido</span>
             </div>
             <div class="fields">
                 <label for="password" >Senha</label>
                 <input required type="password" class="password" placeholder="Crie uma senha">
+                <span style="display: none;" class="passwordMsg fail">Senha invalida</span>
+                <span class="Req" style="color: rgba(0, 0, 0, 0.60);padding-top: 10px; display: block;">Deve conter no minimo 7 letras e 1 numero</span>
             </div>
             <div class="fields">
                 <label for="conf-password">Confirme sua senha</label>
-                <input required type="password" class="password confirm" placeholder="Confirme sua senha">
+                <span class="confpassError fail" style="display: none;">As senhas devem ser iguais</span> 
+                <input disabled required type="password" class="password confirm" placeholder="Confirme sua senha">
             </div>
             <!-- portrait end here -->
         </div>
         <div class="button">
-            <button type="submit">Cadastrar</button>
+            <button disabled type="submit">Cadastrar</button>
+            <br>
         </div>
     <!-- form end here -->
     </form>
+    <a href="#" class="return">Voltar para o login</a>
+    <br>
+    <br>
+    <script src="../js/createAccount.js"></script>
 </body>
 </html>
