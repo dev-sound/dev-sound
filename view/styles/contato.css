@@ -4,21 +4,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-decoration: none;
-    text-decoration: black;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 body{
     background: #F1F1F1;
     font-family: 'Roboto', sans-serif;
 }
-
-/* begin header - menu */
 
 header{
     display: flex;
@@ -257,82 +248,20 @@ header{
     top: 6.5px;
 }
 
-/* end header - menu */
+/* end header */
 
-/* begin info banner */
-
-.banner {
+.container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.banner img {
-    margin: 5px 5px 5px 5px;
-    width: 90%;
-    border-radius: 11px;
-}
-
-
-/* end info banner */
-
-/* begin offers */
-
-.offers {
-    margin: 30px 10px 0px 10px;;
-    font-size: 24px;
-}
-
-.caroussel {
-    margin-bottom: 20px;
-}
-
-.product-list {
-    list-style: none;
+.container-row {
     display: flex;
-    overflow-x: scroll;
-    padding: 0px;
-    margin-top: 0px;
-    margin-left: 10px
+    flex-direction: row;
+    margin: 10px 30px;
 }
 
-.product-item {
-    margin: 20px 30px 20px 5px;
+.container-row .nome {
+    margin: 5px;
+    font-size: 18px;
 }
-
-.product-item img {
-    width: 40vw;
-    border-radius: 11px;
-    box-shadow: 0px 0px 5px -2px black;
-}
-
-.product-item .nome {
-    font-size: 16px;
-}
-
-.product-item .price-off {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.product-item .price {
-    font-size: 12px;
-    text-decoration: line-through;
-}
-
-
-
-/* end offers */
-
-/* begin news */
-
-.news {
-    margin: 30px 10px 0px 10px;;
-    font-size: 24px;
-}
-
-.product-item .price-news {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-/* end news */
