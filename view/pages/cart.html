@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras da DevSound</title>
+    <link href="../styles/header-menu-footer.css" rel="stylesheet">
+    <link href="../styles/cart.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Begin Header -->
+    <header>
+        <div id="header-container-principal">
+            <div id="menu-hamburger">
+                <img src="../images/icons/menu.png">
+            </div>
+
+            <div id="logo">
+                <img src="../images/logo.png">
+                <span>INSTRUMENTOS</span>
+            </div>
+
+            <div id="cart">
+                <div id="elipse-cart">
+                    <img class="cart-icon" src="../images/icons/cart.png">
+                    <div class="elipse">
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav id="nav-side">
+            <div id="area-menu">
+
+                <div id="logo-menu">
+                    <img src="../images/logo.png" alt="">
+                    <span>INSTRUMENTOS</span>
+                </div>
+
+
+                <div id="user">
+                    <div id="img-user">
+                        <img src="../images/icons/usuario.png" class="user-img">
+                    </div>
+
+                    <div id="user-area-info">
+                        <h2>Olá,faça seu login</h2>
+                        <span><a href="#" id="acess-acount-user"> Acessar a área do usuario</a></span>
+                    </div>
+                </div>
+
+                <ul>
+
+                    <li class="link-menu">
+                        <div id="open_drop">
+                            Categorias <span class="material-icons">arrow_drop_down</span>
+                        </div>
+                        <ul id="drop-list">
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Cordas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Sopro</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Teclas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Acessórios</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="link-menu move">Meus Perfil</a></li>
+                    <li><a href="#" class="link-menu move">Meus Pedidos</a></li>
+                    <li><a href="#" class="link-menu">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <span class="close"><img src="../images/icons/close.png"></span>
+        </nav>
+
+
+        <div id="header-container-search">
+            <form id="search-menu">
+                <input type="text" placeholder="O que você procura hoje?">
+                <button type="submit"><img src="../images/icons/search_icon.png"></button>
+            </form>
+        </div>
+    </header>
+
+
+    <!-- End Header -->
+
+    <!-- Begin your code here -->
+
+    <div class="container-inline">
+        <h1 class="title-cart">Seu carrinho</h1>
+        <div class="container-field">
+            <div class="img-button">
+                <img class="img-item" src="../images/imgs-cart/violao_1.jpg" class="cart-img1">
+                <button class="delete-button" type="submit" style="border:none">Excluir</button>
+            </div>
+            <div class="item-desc-cart">
+                <h2 class="title-item">VIOLÃO TAKAMINE</h2>
+                <h3 class="desc-item">Color: Black</h3>
+                <h3 class="desc-item">Modelo: 321 457 903</h3>
+                <h3 class="desc-item">Série: Player Right Hand</h3>
+                <div class="price">
+                    <h3 class="desc-item">Preço:</h3>
+                    <h3 class="desc-item price-value">R$ 3.800,00</h3>
+                </div>
+                <div class="quantity">
+                    <h3 class="desc-item">Quantidade:</h3>
+                    <div class="button-qtd">
+                        <button class="qtd" id="qtdminus" type="button">-</button>
+                        <h5 class="qtd" id="qtd">1</h5>
+                        <button class="qtd" id="qtdmore" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-field">
+            <div class="img-button">
+                <img class="img-item" src="../images/imgs-cart/sax_2.png" class="cart-img2">
+                <button class="delete-button" type="submit" style="border:none">Excluir</button>
+            </div>
+            <div class="item-desc-cart">
+                <h2 class="title-item">SAXOFONE STRAUSS</h2>
+                <h3 class="desc-item">Color: Golden</h3>
+                <h3 class="desc-item">Modelo: 321 457 903</h3>
+                <h3 class="desc-item">Série: Player Right Hand</h3>
+                <div class="price">
+                    <h3 class="desc-item">Preço:</h3>
+                    <h3 class="desc-item price-value">R$ 2.099,00</h3>
+                </div>
+                <div class="quantity">
+                    <h3 class="desc-item">Quantidade:</h3>
+                    <div class="button-qtd">
+                        <button class="qtd" id="qtdminus2" type="button">-</button>
+                        <h5 class="qtd" id="qtd2">1</h5>
+                        <button class="qtd" id="qtdmore2" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="finish-buy">
+            <div class="total-price">
+                <h4 class="desc-total">Total:</h4>
+                <h3 class="desc-item total-price-value">R$ 5.899,00</h3>
+            </div>
+            <button class="buy-button" type="submit" style="border: none;">Finalizar Compra</button>
+        </div>
+    </div>
+
+
+
+    <!-- End your code here -->
+
+    <script src="../js/menu-header.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>
