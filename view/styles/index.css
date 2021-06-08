@@ -270,6 +270,7 @@ header{
     margin: 5px 5px 5px 5px;
     width: 90%;
     border-radius: 11px;
+    height: 200px;
 }
 
 
@@ -278,12 +279,14 @@ header{
 /* begin offers */
 
 .offers {
-    margin: 30px 10px 0px 10px;;
-    font-size: 24px;
+    margin: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .caroussel {
     margin-bottom: 20px;
+    
 }
 
 .product-list {
@@ -297,6 +300,7 @@ header{
 
 .product-item {
     margin: 20px 30px 20px 5px;
+    
 }
 
 .product-item img {
@@ -307,16 +311,19 @@ header{
 
 .product-item .nome {
     font-size: 16px;
+    text-align: center;
 }
 
 .product-item .price-off {
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
 }
 
 .product-item .price {
     font-size: 12px;
     text-decoration: line-through;
+    text-align: center;
 }
 
 
@@ -333,6 +340,7 @@ header{
 .product-item .price-news {
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* end news */
