@@ -334,7 +334,8 @@ header{
 
 .news {
     margin: 30px 10px 0px 10px;;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .product-item .price-news {
