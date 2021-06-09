@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molde-header-menu-footer</title>
+    <link href="../styles/header-menu-footer.css" rel="stylesheet">
+    <link href="../styles/order-done.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Begin Header -->
+    <header>
+        <div id="header-container-principal">
+            <div id="menu-hamburger">
+                <img src="../images/icons/menu.png">
+            </div>
+
+            <div id="logo">
+                <img src="../images/logo.png">
+                <span>INSTRUMENTOS</span>
+            </div>
+
+            <div id="cart">
+                <div id="elipse-cart">
+                    <img class="cart-icon" src="../images/icons/cart.png">
+                    <div class="elipse">
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav id="nav-side">
+            <div id="area-menu">
+
+                <div id="logo-menu">
+                    <img src="../images/logo.png" alt="">
+                    <span>INSTRUMENTOS</span>
+                </div>
+
+
+                <div id="user">
+                    <div id="img-user">
+                        <img src="../images/icons/usuario.png" class="user-img">
+                    </div>
+
+                    <div id="user-area-info">
+                        <h2>Olá,faça seu login</h2>
+                        <span><a href="#" id="acess-acount-user"> Acessar a área do usuario</a></span>
+                    </div>
+                </div>
+
+                <ul>
+
+                    <li class="link-menu">
+                        <div id="open_drop">
+                            Categorias <span class="material-icons">arrow_drop_down</span>
+                        </div>
+                        <ul id="drop-list">
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Cordas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Sopro</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Teclas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Acessórios</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="link-menu move">Meus Perfil</a></li>
+                    <li><a href="#" class="link-menu move">Meus Pedidos</a></li>
+                    <li><a href="#" class="link-menu">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <span class="close"><img src="../images/icons/close.png"></span>
+        </nav>
+
+
+    </header>
+
+
+    <!-- End Header -->
+
+    <!-- Begin your code here -->
+    <div class="container-inline">
+        <div class="container-msg">
+            <div>
+                <img src="../images/icons/check 1.png"></button>
+            </div>
+            <div>
+                <h1 class="request-done">SEU PEDIDO FOI CONFIRMADO!</h1>
+                <h2 class="request-thank">Obrigada por comprar na devsound.</h2>
+            </div>
+        </div>
+        <div class="container-info">
+            <h3 class="request-info">Número do pedido: <strong>2196976</strong></h3>
+            <h3 class="request-info">Entrega prevista para: <strong>20/07</strong></h3>
+            <h3 class="request-link">Consulte em <a href="#" class="link-request">Meus Pedidos</href>
+            </h3>
+        </div>
+    </div>
+
+    <!-- End your code here -->
+
+    <script src="../js/menu-header.js"></script>
+</body>
+
+</html>
