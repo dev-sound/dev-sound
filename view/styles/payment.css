@@ -1,0 +1,375 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.info-payment{
+    background: rgba(226, 221, 221, 1);
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.info-payment h2{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.9);    
+}
+
+.card-payment{
+    padding: 12px 20px;
+}
+
+label[for="cart-input"] , label[for="save-card"], label[for="card-radio"]{
+    position: relative;
+    top:-1.7px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6;
+}
+
+#card-select-area{
+    position: relative;
+    top: 9px;
+    margin-left: 2.5px;
+    margin-top: -2px;
+}   
+
+input[type="radio"],[type="checkbox"]{
+    transform: scale(1.4);
+}
+
+
+.normal-style-form , #installments-card{
+    background: #EFEFEF;
+    border: 1px solid #7E7E7E;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+label{
+    font-size: 12px;
+    margin-left: 2px;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 1)
+}
+
+
+#info-input-card{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.card-info,.card-info-date{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.info-card-two{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first{
+   width: 38vw;
+   margin-right: 4px;
+}
+
+.two {
+    width: 32vw;
+    margin-right: 4px;
+
+}
+
+.three{
+    width: 18vw;
+  
+}
+
+#card-paymente-btns{
+    margin-left: 2.5px;
+    padding-top: 20px;
+}
+
+.btn-info{
+    border-top: 1px solid rgba(65, 61, 61, 0.27);
+    margin-top: 22px;
+    padding-top: 5px;
+    padding-bottom: 22px;
+}
+.btn-info:nth-child(2){
+    padding-top: 6px;
+    border-top: 1px solid rgba(65, 61, 61, 0.27);
+}
+
+#street{
+    width: 70vw;
+    margin-right: 2px;
+}
+
+#number-home{
+    width: 20vw;
+}
+
+#city{
+    width: 70vw;
+}
+
+#uf{
+    width: 20vw;
+}
+
+.address{
+    padding-top: 30px;
+
+}
+
+[for="save-address"]{
+    position: relative;
+    top: -2px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+
+
+.product{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    padding: 10px 10px;
+}
+
+.price-review-product{
+    margin-top: 6px;
+}
+
+#area-product-review{
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+   
+}
+
+.info-product ul{
+    list-style: none;
+}
+
+.info-product li{
+    font-size: 14px;
+}
+
+.title-review-product{
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.img-product img {
+    margin-right: 10px;
+}
+
+.qtd-product-card{
+    position: relative;
+    left: 10px;
+    font-weight: bold;
+}
+
+.price-info{
+    padding: 10px 26px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-info h3{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.price-total{
+    padding: 17px 22px;
+    margin-top: 10px;
+    display: flex;
+    background-color: #C4C4C4;;
+    justify-content: space-between;
+}
+
+.price-total{
+    font-size: 20px;
+}
+
+#abstract-area{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.st{
+    margin-top: 3px;
+}
+
+.expand{
+    padding-top: 50px;
+}
+
+.btn{
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    z-index: 100;
+    background-color: #7D7D7D;
+    filter: drop-shadow(1px 0px 3px rgba(0, 0, 0, 0.25));
+    width: 100%;
+    color:#FFFFFF;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+
+#area-ticket{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#ticket-btn{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    height: 50px;
+    background: #FACC22;
+    padding: 10px;
+    width: 80%;
+}
+
+/* -------------------------- JS ------------------ */
+
+.correct{
+    background-image: url("../images/icons/correct.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 97%;
+    background-size: 20px;
+    border: 1px solid rgb(28, 151, 11);
+    
+}
+
+.incorrect{
+    background-image: url("../images/icons/incorrect.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+    background-size: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(151, 11, 11);
+    
+}
+
+.correct-second{
+    background-image: url("../images/icons/correct.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 22vh;
+    margin-right: 4px;
+    background-position: 98%;
+    background-size: 20px;
+    border: 1px solid rgb(28, 151, 11);
+    
+}
+
+.incorrect-second{
+    background-image: url("../images/icons/incorrect.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+    width: 22vh;
+    margin-right: 4px;
+    background-size: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(151, 11, 11);
+    
+}
+
+
+
+.correct-third{
+    background-image: url("../images/icons/correct.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 18vh;
+    margin-right: 4px;
+    background-position: 98%;
+    background-size: 20px;
+    border: 1px solid rgb(28, 151, 11);
+    
+}
+
+.incorrect-third{
+    background-image: url("../images/icons/incorrect.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+    width: 18vh;
+    margin-right: 4px;
+    background-size: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(151, 11, 11);
+}
+
+
+.correct-fourth{
+    background-image: url("../images/icons/correct.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 9vh;
+    margin-right: 4px;
+    background-position: 98%;
+    background-size: 20px;
+    border: 1px solid rgb(28, 151, 11);
+    
+}
+
+.incorrect-fourth{
+    background-image: url("../images/icons/incorrect.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+    width: 9vh;
+    margin-right: 4px;
+    background-size: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(151, 11, 11);
+}
+
+
+
+.correct-uf{
+    background-image: url("../images/icons/correct.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 9vh;
+    margin-right: 4px;
+    background-position: 70%;
+    background-size: 20px;
+    border: 1px solid rgb(28, 151, 11);
+    
+}

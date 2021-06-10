@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molde-header-menu-footer</title>
+    <link href="../styles/contato.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+    <body>
+        <!-- Begin Header -->
+        <header>    
+            <div id="header-container-principal">
+                <div id="menu-hamburger">
+                 <img  src="../images/icons/menu.png">
+                </div>
+
+                <div id="logo"><a href="../index.html">
+                    <img src="../images/logo.png"></a>
+                    <span>INSTRUMENTOS</span>
+                </div>
+
+                <div id="cart">  
+                    <div id="elipse-cart"><a href="./cart.html">
+                        <img class="cart-icon" src="../images/icons/cart.png"></a>
+                        <div class="elipse">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+            <nav id="nav-side">
+                <div id="area-menu">
+                    
+                    <div id="logo-menu">
+                        <img src="../images/logo.png" alt="">
+                        <span>INSTRUMENTOS</span>
+                    </div>
+               
+
+                    <div id="user">  
+                        <div id="img-user">
+                            <img src="../images/icons/usuario.png" class="user-img">
+                        </div>
+
+                        <div id="user-area-info"><a href="./cart.html">
+                            <h2>Olá,faça seu login</h2>
+                            <span id="acess-acount-user"> Acessar a área do usuario</a></span>
+                        </div>
+                    </div>
+                    
+                    <ul>
+
+                        <li class="link-menu" >
+                            <div id="open_drop">
+                                Categorias <span class="material-icons">arrow_drop_down</span>
+                            </div>
+                          <ul id="drop-list">  
+                            <li class="drop-item">
+                               <a href="#" class="link-menu">Cordas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Sopro</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Teclas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Acessórios</a>
+                            </li>
+                        </ul>
+                        </li>
+                        
+                        <li><a href="#" class="link-menu move" >Meus Perfil</a></li>
+                        <li><a href="#" class="link-menu move" >Meus Pedidos</a></li>     
+                        <li><a href="#" class="link-menu">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <span class="close"><img src="../images/icons/close.png"></span>
+            </nav>
+        </header>  
+    
+    <!-- End Header -->
+
+    <!-- Begin your code here -->
+    <div class="title"><h2>Contato</h2>
+    <p class="p">Entre em contato conosco</p></div>
+    <div class="container">
+        <div class="container-row">
+            <div><a href="tel:11968457833"><img src="../images/whatsapp.png" alt="" class="phone"></div></a>
+            <div class="nome">Telefone</div>
+        </div>
+        <div class="container-row">
+            <div><a href="www.instagram.com"><img src="../images/instagram.png" alt="" class="instagram"></div></a>
+            <div class="nome">Instagram</div>
+        </div>
+        <div class="container-row">
+            <div><a href="www.facebook.com"><img src="../images/facebook.png" alt="" class="facebook"></div></a>
+            <div class="nome">Facebook</div>
+        </div>
+        <div class="container-row">
+            <div><a href="mailto:contato@devsound.com"><img src="../images/gmail.png" alt="" class="email"></div></a>
+            <div class="nome">E-mail</div>
+        </div>
+    </div>
+
+
+
+    <!-- End your code here -->
+        
+    <script src="../js/menu-header.js"></script>
+    </body>
+</html>

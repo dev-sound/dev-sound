@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molde-header-menu-footer</title>
+    <link href="../styles/header-menu-footer.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../styles/payment.css" rel="stylesheet" >
+</head>
+    <body>
+        <!-- Begin Header -->
+        <header>    
+            <div id="header-container-principal">
+                <div id="menu-hamburger">
+                 <img  src="../images/icons/menu.png">
+                </div>
+
+                <div id="logo">
+                    <img src="../images/logo.png" >
+                    <span>INSTRUMENTOS</span>
+                </div>
+
+                <div id="cart">  
+                    <div id="elipse-cart">
+                        <img class="cart-icon" src="../images/icons/cart.png">
+                        <div class="elipse">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+            <nav id="nav-side">
+                <div id="area-menu">
+                    
+                    <div id="logo-menu">
+                        <img src="../images/logo.png" alt="">
+                        <span>INSTRUMENTOS</span>
+                    </div>
+               
+
+                    <div id="user">  
+                        <div id="img-user">
+                            <img src="../images/icons/usuario.png" class="user-img">
+                        </div>
+
+                        <div id="user-area-info">
+                            <h2>Olá,faça seu login</h2>
+                            <span><a href="#" id="acess-acount-user"> Acessar a área do usuario</a></span>
+                        </div>
+                    </div>
+                    
+                    <ul>
+
+                        <li class="link-menu" >
+                            <div id="open_drop">
+                                Categorias <span class="material-icons">arrow_drop_down</span>
+                            </div>
+                          <ul id="drop-list">  
+                            <li class="drop-item">
+                               <a href="#" class="link-menu">Cordas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Sopro</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Teclas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Acessórios</a>
+                            </li>
+                        </ul>
+                        </li>
+                        
+                        <li><a href="#" class="link-menu move" >Meu Perfil</a></li>
+                        <li><a href="#" class="link-menu move" >Meus Pedidos</a></li>     
+                        <li><a href="#" class="link-menu">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <span class="close"><img src="../images/icons/close.png"></span>
+            </nav>
+        </header>  
+        
+        <!-- End Header -->
+
+        <!-- Begin your code here -->
+
+            <div id="container-payment">
+                <div class="info-payment">
+                    <h2>Forma de pagamento</h2>
+                </div>
+
+                <form > 
+                    <div class="card-payment">
+                        <div id="card-select-area">
+                            <input type="radio" id="cart-input" name="form-payment" value="card" checked>
+                            <label for="cart-input">Cartão de Crédito</label>
+                        </div>
+
+                        <div id="info-input-card">  <!-- Start info card -->
+                           
+                            <div class="card-info">
+                                <label for="number-card"> Número do Cartão </label>
+                                <input type="text" class="normal-style-form" required id="number-card" placeholder="xxxxxxxxxxxxxxxx">
+                            </div>
+
+                            <div class="card-info">
+                                <label for="name-card"> Nome do Cartão </label>
+                                <input type="text" class="normal-style-form" id="name-card" placeholder="Nome do cartão" required disabled>
+                            </div>
+
+                            <div class="info-card-two"> <!-- Start info card two -->
+                                <div class="card-info-date">
+                                    <label for="mouth-card"> Mês de expiração </label>
+                                    <input type="text" class="normal-style-form first" id="mouth-card" required placeholder="12" disabled>
+                                </div>
+
+                                <div class="card-info-date">
+                                    <label for="year-card" >Ano de expiração </label>
+                                    <input type="text" class="normal-style-form two"  id="year-card" required placeholder="2022" disabled  >
+                                </div>
+
+                                <div class="card-info-date">
+                                    <label for="cvv"> CVV </label>
+                                    <input type="text" class="normal-style-form three"  id="cvv" required placeholder="888" disabled>
+                                </div>
+                          
+                            </div> <!-- End info card two -->
+                        
+                            
+                            <div class="card-info">
+                                <label> Parcelas </label>
+                                    <select  id="installments-card" disabled >
+                                        <option value="1x">1x de R$ R$ <span class="value-opt">3,999</span> </option>
+                                        <option value="2x">2x de R$ <span class="value-opt">1,995 </span> sem juros </option>
+                                        <option value="3x">3x de R$ <span class="value-opt"> R$ 1,333</span> sem juros</option>
+                                        <option value="4x">4x de R$ <span class="value-opt"> R$ 997</span> sem juros</option>
+                                        <option value="5x">5x de R$ <span class="value-opt"> R$ 799</span> sem juros</option>
+                                        <option value="6x">6x de R$ <span class="value-opt"> R$ 665</span> sem juros</option>
+                                        <option value="7x">7x de R$ <span class="value-opt"> R$ 571 </span>sem juros</option>
+                                        <option value="8x">8x de R$ <span class="value-opt"> R$ 498</span> sem juros</option>
+                                        <option value="9x">9x de R$ <span class="value-opt"> R$ 443 </span>sem juros</option>
+                                        <option value="10x">10x de R$ <span class="value-opt"> R$ 399</span> sem juros</option>
+                                        <option value="11x">11X de R$ <span class="value-opt"> R$ 363</span> sem juros</option>
+                                        <option value="12x">12x de R$ <span class="value-opt"> R$ 333 </span>sem juros</option>
+                                    </select>
+                            </div>
+                        
+                        </div>  <!-- End info card -->
+    
+                            
+                            <div class="btn-info">
+                                <input type="radio" id="card-radio" name="form-payment" value="ticket">
+                                <label for="card-radio" >Boleto</label>
+                            </div>
+
+
+                            <div id="area-ticket" style="display:none"> 
+
+                                <button id="ticket-btn">  Gerar Boleto </button>
+
+                            </div>
+
+
+
+                        </div> <!-- End Payment-->
+
+                    </div>
+
+                    <div class="info-payment">
+                        <h2>Endereço de Entrega</h2>
+                    </div>
+
+                    <div class="card-payment">
+                        <div class="card-info">
+                            <label for="cep"> CEP </label>
+                            <input type="text" class="normal-style-form" required  id="cep" placeholder="00000-000">
+                        </div>
+
+
+                        <div class="info-card-two"> 
+                            <div class="card-info-date">
+                                <label for="street"> Rua/Avenida </label>
+                                <input type="text" class="normal-style-form" id="street" required placeholder="Rua/Avenida" disabled>
+                            </div>
+
+                            <div class="card-info-date">
+                                <label for="number-home">Número </label>
+                                <input type="text" class="normal-style-form"  id="number-home" required placeholder="Numero" disabled>
+                            </div>
+                        </div>
+                        
+
+                        <div class="card-info">
+                            <label for="district"> Bairro </label>
+                            <input type="text" class="normal-style-form" required  id="district" placeholder="Bairro" disabled>
+                        </div>
+
+
+                        <div class="info-card-two"> 
+                            <div class="card-info-date">
+                                <label for="city"> Cidade </label>
+                                <input type="text" class="normal-style-form" id="city" required placeholder="Cidade" disabled>
+                            </div>
+
+                            <div class="card-info-date">
+                                <label for="uf">UF </label>
+                                <select  class="normal-style-form"  id="uf" disabled>  
+                                    <option value="SP"> SP </option>
+                                    <option value="RJ"> RJ </option>
+                                    <option value="MG"> MG </option>
+                                    <option value="PR"> PR </option>
+                                    <option value="MS"> MS </option>
+                                    <option value="GO"> GO </option>
+                                    <option value="SC"> SC </option>
+                                </select>
+                         
+                            </div>
+                        </div>
+
+
+                        <div class="btn-info address">
+                            <input type="checkbox" id="save-card" name="saved-info-client" disabled>
+                            <label for="save-address"> Salvar endereço para próximas compras? </label>
+                        </div>
+
+                    </div>
+                    
+                    <div>
+                        <button type="submit" class="btn"> FINALIZAR COMPRA </button>
+                    </div>
+                </form>
+            
+                <div class="info-payment">
+                    <h2>Revisão de produtos</h2>
+                </div>
+                <!-- product review -->
+                    <div id="area-product-review">
+                        <div class="product-area">
+                            <div class="product">
+                            
+                                <div class="img-product">
+                                    <img  src="../images/instruments/violao_ 2.png" > 
+                                </div>
+                                
+                                <div class="info-product">
+                                    <ul>
+                                        <li>
+                                            <h1 class="title-review-product" >VIOLÃO TAKAMINE</h1>
+                                        </li>
+                                        <li>
+                                            Cor:Black
+                                        </li>
+                                        <li class="area-product-qtd-card">
+                                            Modelo: 321 457 903
+                                            <span class ="qtd-product-card"> Quantidade: <span class="qtd-product-card-value"> 1 </span> </span>
+                                        </li>
+                                        <li>
+                                            Serie:Player Right
+                                        </li>
+                                        <li>
+                                            <h2 class="price-review-product">R$ 3.800,00 </h2>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                          
+                        <div class="product-area">  
+                            <div class="product">
+                                <div class="img-product">
+                                    <img  src="../images/instruments/sax_ 2.png" > 
+                                </div>
+    
+                                <div class="info-product">
+                                    <ul>
+                                        <li>
+                                            <h1 class="title-review-product">SAXOFONE STRAUSS</h1>
+                                        </li>
+                                        <li>
+                                            Cor:Black
+                                        </li>
+                                        <li class="area-product-qtd-card">
+                                            Modelo: 321 457 903
+                                            <span class="qtd-product-card"> Quantidade: <span class="qtd-product-card-value"> 1 </span> </span>
+                                        </li>
+                                        <li>
+                                            Serie:Player Right 
+                                        </li>
+                                        <li>
+                                            <h2 class="price-review-product" >R$ 2.099,00 </h2>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-payment st">
+                            <h2>Resumo</h2>
+                        </div>
+
+                        <div id="abstract-area"> <!-- Begin abstract-->
+                            <div class="price-info">
+                                <h3>
+                                    Subtotal
+                                </h3>
+
+                                <h3>
+                                    R$ 6.899,00
+                                </h3>
+                            </div>
+
+                            <div class="price-info">
+                                <h3>
+                                    Descontos
+                                </h3>
+                                <h3>
+                                    -R$ 1.000,00
+                                </h3>
+                            </div>
+                            
+                            <div class="price-total">
+                                <h3>
+                                    Total
+                                </h3>
+
+                                <h3>
+                                    R$ 6.944,00
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="expand"></div>
+            </div>
+
+        <!-- End your code here -->
+        
+    <script src="../js/menu-header.js"></script>
+    <script src="../js/payment.js" ></script>
+    </body>
+</html>
