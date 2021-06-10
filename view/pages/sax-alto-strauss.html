@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link href="../styles/product.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Begin Header -->
+    <header>
+        <div id="header-container-principal">
+            <div id="menu-hamburger">
+                <img src="../images/icons/menu.png">
+            </div>
+
+            <div id="logo"><a href="../index.html">
+                <img src="../images/logo.png"></a>
+                <span>INSTRUMENTOS</span>
+            </div>
+
+            <div id="cart"><a href="./cart.html">
+                <div id="elipse-cart">
+                    <img class="cart-icon" src="../images/icons/cart.png">
+                    <div class="elipse">
+                        <span>0</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav id="nav-side">
+            <div id="area-menu">
+
+                <div id="logo-menu">
+                    <img src="../images/logo.png" alt="">
+                    <span>INSTRUMENTOS</span>
+                </div>
+
+
+                <div id="user">
+                    <div id="img-user">
+                        <img src="../images/icons/user_account_profile_icon.png" class="user-img">
+                    </div>
+
+                    <div id="user-area-info"><a href="login.html">
+                        <h2>Olá, faça seu login</h2>
+                        <span id="acess-acount-user"> Acessar a área do usuario</a></span>
+                    </div>
+                </div>
+
+                <ul>
+
+                    <li class="link-menu">
+                        <div id="open_drop">
+                            Categorias <span class="material-icons">arrow_drop_down</span>
+                        </div>
+                        <ul id="drop-list">
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Cordas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Sopro</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Teclas</a>
+                            </li>
+                            <li class="drop-item">
+                                <a href="#" class="link-menu">Acessórios</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="link-menu move">Meu Perfil</a></li>
+                    <!-- <li><a href="#" class="link-menu move" >Meus Pedidos</a></li>      -->
+                    <li><a href="./contato/html" class="link-menu">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <span class="close"><img src="../images/icons/close.png"></span>
+        </nav>
+
+
+        <div id="header-container-search">
+            <form id="search-menu">
+                <input type="text" placeholder="O que você procura hoje?">
+                <button type="submit"><img src="../images/icons/search_icon.png"></button>
+            </form>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Begin Product Image Slider -->
+
+    <div class="slider-with-product-image">
+    <div class="slider-icon-container">
+    <div class="slider-icons">
+    <img class="next-icon" id="next-icon-1" src="../images/icons/next_icon_left.png"/>
+    <img class="next-icon" id="next-icon-2" src="../images/icons/next_icon_right.png"/>
+    </div>
+    </div>
+
+
+    <div class="product-banner">
+        <ul>
+            <li>
+                <img class="product-image" id="productImage1" 
+                    src="../images/sax-alto.jpg">
+            </li>
+            <li>
+                <img class="product-image" id="productImage2" style="display: none;"
+                    src="../images/sax-alto2.jpg">
+            </li>
+        </ul>
+    </div>
+    </div>
+    <!-- End Product Image Slider -->
+
+    <!-- Start Product Title and Description -->
+
+    <div class="product-title">
+        <h3 class="product-title-text">Saxofone Alto Strauss</h3>
+        <p class="short-product-description">Saxofone alto em Mib laqueado - Strauss.</p>
+    </div>
+
+    <div class="price-button-box">
+
+        <div class="prices-text">
+            <div class="old-price">
+                <p>R$2.790,00</p>
+            </div>
+
+            <div class="price">
+                <p>R$2.099,00</p>
+            </div>
+        </div>
+
+        <div class="buy-button-box">
+            <a href="#" class="buy-button-text">Comprar</a>
+        </div>
+
+    </div>
+
+    <div class="product-description-box">
+
+        <div class="product-description">
+            <span class="product-description-title">Descrição</span>
+
+            <p class="product-description-text">
+                Acreditamos que a música é sempre o mais importante! Sendo assim, oferecemos nossos instrumentos musicais e acessórios pensando na melhor relação custo-benefício para o cliente, sempre nos pautando na transparência e honestidade.
+                Saxofone alto marca Strauss, modelo AS-100G. Produto importado de alta qualidade, com afinação em mi bemol (Eb). Acompanha luva para manuseio, flanela, e escova para limpeza. </p>
+        </div>
+
+        <div class="product-specs">
+            <span class="product-specs-title">Especificações técnicas</span>
+            <div class="product-specs-text">
+                <p>- Afinação Mib</p>
+                <p>- Chave de Fá# agudo</p>
+                <p>- 2 túdeis – curvo / reto</p>
+                <p>- Extensão Sib grave à Sol agudo</p>
+                <p>- Molas Blue Steel</p>
+                <p>- Parafusos em aço inox</p>
+                <p>- Acompanha palheta Vandoren</p>
+                <p>- Estojo extra luxo</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- End Product Title and Description -->
+
+    <script src="../js/product.js"></script>
+</body>
+
+</html>
