@@ -45,7 +45,7 @@ function validNameCard(form){
         formPayment.mouthCard.removeAttribute('disabled')
     }else{
         form.setAttribute("class"," normal-style-form incorrect")
-        formPayment.nameCard.setAttribute('disabled','disabled')
+        formPayment.mouthCard.setAttribute('disabled','disabled')
     }
 }
 
@@ -57,7 +57,7 @@ function validMouthCard(form) {
         formPayment.yearCard.removeAttribute('disabled')
     }else{
         form.setAttribute("class"," normal-style-form incorrect-second")
-        formPayment.nameCard.setAttribute('disabled','disabled')
+        formPayment.yearCard.setAttribute('disabled','disabled')
     }
     
 }
@@ -73,7 +73,7 @@ function validYearCard(form){
         formPayment.cvvCard.removeAttribute('disabled')
     }else{
         form.setAttribute("class"," normal-style-form incorrect-third")
-        formPayment.nameCard.setAttribute('disabled','disabled')
+        formPayment.cvvCard.setAttribute('disabled','disabled')
     }
 }
 
@@ -85,7 +85,7 @@ function validCvvCard(form){
         formPayment.selectPay.removeAttribute("disabled")
     }else{
         form.setAttribute("class"," normal-style-form incorrect-fourth")
-        formPayment.nameCard.setAttribute('disabled','disabled')
+        formPayment.selectPay.setAttribute('disabled','disabled')
     }
 }
 
@@ -170,10 +170,6 @@ paymenteBtn[1].addEventListener("click",function() {
         
         document.querySelector("#area-ticket").style.display = "flex"
         document.querySelector('#info-input-card').style.display = "none"
-
-        for(let i = 1 ; i <= 5;i++){
-            document.forms[0].elements[i].value = " "
-        }
     }
 })
 
