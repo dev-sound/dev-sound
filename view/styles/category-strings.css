@@ -1,25 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body{
-    background: #F1F1F1;
-    font-family: 'Roboto', sans-serif;
-}
-
-header{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-/* 
-/* Category titles */
-
 * {
     margin: 0px;
     padding: 0px;
@@ -67,12 +46,7 @@ a {
 .product-title-carousel {
     font-size: 13px;
 }
-<<<<<<< HEAD
-
 .product-image-ul {
-=======
-.product-image-ul  {
->>>>>>> 4855ce0b07309507485203ddbb4a9d244e0e7425
     display: flex;
     overflow-x: scroll;
     white-space: nowrap;
@@ -82,10 +56,6 @@ a {
     width: 60%;
     white-space: nowrap;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4855ce0b07309507485203ddbb4a9d244e0e7425
 .product-image {
     box-shadow: 0px 0px 5px -2px black;
     width: 130px;
