@@ -276,9 +276,9 @@ header{
 
 /* end info banner */
 
-/* begin offers */
+/* begin highlights */
 
-.offers {
+.highlights {
     margin: 5px 10px;
     font-size: 20px;
     font-weight: 500;
@@ -314,21 +314,13 @@ header{
     text-align: center;
 }
 
-.product-item .price-off {
+.product-item .price {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
 
-.product-item .price {
-    font-size: 12px;
-    text-decoration: line-through;
-    text-align: center;
-}
-
-
-
-/* end offers */
+/* end highlights */
 
 /* begin news */
 
@@ -336,12 +328,6 @@ header{
     margin: 30px 10px 0px 10px;;
     font-size: 20px;
     font-weight: 500;
-}
-
-.product-item .price-news {
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
 }
 
 /* end news */
