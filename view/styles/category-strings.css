@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* 
+/* Category titles */
+
+.category-title {
+    font-weight: 500;
+    margin: 10px 0px 0px 19px;
+    font-size: 24px;
+}
+
+.category-subtitle {
+    font-weight: 300;
+    margin: 25px 0px 0px 19px;
+    font-size: 18px;
+}
+
+/* Begin Product Slider */
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.list-item-container {
+    display: flex;
+    text-align: center;
+    margin: 10px 0px 0px 10px;
+    width: 2px;
+    list-style: none;
+    
+}
+
+.title-link-to-product-page {
+    font-weight: 500;
+}
+
+.price-link-to-product-page {
+    font-weight: 400;
+}
+
+.product-title-carousel {
+    font-size: 13px;
+}
+
+.product-image-ul, ul {
+    display: flex;
+    
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.list-item-container{
+    display: flex;
+    width: 60%;
+    white-space: nowrap;
+
+}
+master and hdev are entirely different commit histories.
+    border-radius: 11px;
+    
+}
+
+/* End Product Slider */
+
