@@ -14,73 +14,72 @@
 
 <body>
     <!-- Begin Header -->
-    <header>
+    <header>    
         <div id="header-container-principal">
             <div id="menu-hamburger">
-                <img src="../images/icons/menu.png">
+             <img  src="../images/icons/menu.png">
             </div>
 
-            <div id="logo">
-                <img src="../images/logo.png">
+            <div id="logo"><a href="../index.html">
+                <img src="../images/logo.png" ></a>
                 <span>INSTRUMENTOS</span>
             </div>
 
-            <div id="cart">
+            <div id="cart"><a href="../pages/cart.html">
                 <div id="elipse-cart">
                     <img class="cart-icon" src="../images/icons/cart.png">
                     <div class="elipse">
-                        <span>0</span>
+                        <span>0</span></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
 
         <nav id="nav-side">
             <div id="area-menu">
-
+                
                 <div id="logo-menu">
                     <img src="../images/logo.png" alt="">
                     <span>INSTRUMENTOS</span>
                 </div>
+           
 
-
-                <div id="user">
+                <div id="user">  
                     <div id="img-user">
                         <img src="../images/icons/usuario.png" class="user-img">
                     </div>
 
-                    <div id="user-area-info">
+                    <div id="user-area-info"><a href="../pages/login.html">
                         <h2>Olá,faça seu login</h2>
-                        <span><a href="#" id="acess-acount-user"> Acessar a área do usuario</a></span>
+                        <span id="acess-acount-user"> Acessar a área do usuario</a></span>
                     </div>
                 </div>
-
+                
                 <ul>
 
-                    <li class="link-menu">
+                    <li class="link-menu" >
                         <div id="open_drop">
                             Categorias <span class="material-icons">arrow_drop_down</span>
                         </div>
-                        <ul id="drop-list">
-                            <li class="drop-item">
-                                <a href="#" class="link-menu">Cordas</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="#" class="link-menu">Sopro</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="#" class="link-menu">Teclas</a>
-                            </li>
-                            <li class="drop-item">
-                                <a href="#" class="link-menu">Acessórios</a>
-                            </li>
-                        </ul>
+                      <ul id="drop-list">  
+                        <li class="drop-item">
+                           <a href="../pages/category-strings" class="link-menu">Cordas</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="../pages/category-wind" class="link-menu">Sopro</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="../pages/category-keyboard" class="link-menu">Teclas</a>
+                        </li>
+                        <li class="drop-item">
+                            <a href="#" class="link-menu">Acessórios</a>
+                        </li>
+                    </ul>
                     </li>
-
-                    <li><a href="#" class="link-menu move">Meus Perfil</a></li>
-                    <li><a href="#" class="link-menu move">Meus Pedidos</a></li>
-                    <li><a href="#" class="link-menu">Fale Conosco</a></li>
+                    
+                    <li><a href="./profile.html" class="link-menu move" >Meus Perfil</a></li>  
+                    <li><a href="./contact.html" class="link-menu">Fale Conosco</a></li>
                 </ul>
             </div>
 
@@ -88,13 +87,14 @@
         </nav>
 
 
-        <div id="header-container-search">
+        <div id="header-container-search">  
             <form id="search-menu">
                 <input type="text" placeholder="O que você procura hoje?">
                 <button type="submit"><img src="../images/icons/search_icon.png"></button>
             </form>
         </div>
-    </header>
+    </header>  
+
 
 
     <!-- End Header -->
@@ -157,7 +157,9 @@
                 <h4 class="desc-total">Total:</h4>
                 <h3 class="desc-item total-price-value">R$ 5.899,00</h3>
             </div>
+            <a href="./payment.html">
             <button class="buy-button" type="submit" style="border: none;">Finalizar Compra</button>
+            </a>
         </div>
     </div>
 
