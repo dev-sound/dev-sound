@@ -310,11 +310,7 @@ a {
 .order p{
     margin-left: 10px;
 }
-.myOrder{
-    display: flex;
-    /* width: 100%; */
-    margin-left: 20px;
-}
+
 .myOrder p{
     padding-right: 50px;
 }
@@ -343,4 +339,99 @@ a {
     background-color: #FACC22;
     padding: 3px;
     border-radius: 10px;
+}
+
+/* ------------------------------- */
+
+
+.name0rder{
+    display:flex ;
+    list-style: none;
+    justify-content: space-between;
+    width:75%;
+    padding-bottom: 5px;
+}
+
+.name0rder li{
+    margin-left: 5px;
+
+}
+.portrait-title{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.props-status{
+    position: relative;
+    left: -10px;
+}
+
+.pos-number{
+    position: relative;
+    left: 20px;
+}
+
+.pos-date{
+    position: relative;
+    left: 20px;
+}
+
+.pos-ticket{
+    position: relative;
+    left: 10px;
+}
+
+
+
+.itens-portrait{
+    margin-top: 5px;
+    overflow: hidden;
+}
+.itens-portrait{
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 52px;
+}
+
+.list-itens-portrait{
+    font-weight: 300;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+
+
+
+.datails-itens{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left:-5px;
+    top: -38px;
+
+}
+
+.datails-itens button{
+    padding: 5px;
+    height: 46px;
+    background-color: rgba(250, 204, 34, 1);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.elipse-itens{
+    position: relative;
+    left:79%;
+    top:22px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.separation{
+    background-color: #F29100;
+}
+
+.done{
+    background-color: #00DA16
 }
