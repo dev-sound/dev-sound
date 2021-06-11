@@ -8,6 +8,9 @@ body{
     background: #F1F1F1;
     font-family: 'Roboto', sans-serif;
 }
+a {
+    text-decoration: none;
+}
 
 
 .info-payment{

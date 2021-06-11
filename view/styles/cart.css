@@ -16,6 +16,9 @@ header{
     flex-direction: column;
     padding: 10px;
 }
+a{
+    text-decoration: none;
+}
 
 #header-container-principal{
     padding: 20px 0px;
